@@ -1,5 +1,7 @@
 # 단계별 통합 진행표
 
+**main·integration 정렬 — 2026-10-16:** main에 직접 병합된 PR #16~#20을 integration에 합치고, README를 Bronze→Silver→Gold 결과 중심으로 정리했으며, 수집 원값 파일을 공개 트리에서 제거했다. 이후 PR #11로 main 승격. 팀 확인 항목(이력·DB 릴리스·이용 조건)은 [정렬 기록](handoffs/main-sync-20261016.md).
+
 **A 시각화 후속 병합 완료:** PR #12 → integration (`8a9fce00d8181a95a960c543dbd0da88e23e41be`). 병합 전 GitHub CI 두 종류 PASS, 병합 후 단위 17 / 브라우저 18(제외 없음) / 빌드 / 75파일 무결성 PASS. [병합 결과](handoffs/A-visual-merge.md). main 증빙 대기는 유지한다.
 
 **원격 병합 완료 — 2026-10-15:** PR #10 → integration (`81731cd1fafcc9c8604a95e401538295aa3ce449`). PR #4~#9 병합 완료, GitHub 통합/프론트 CI PASS. main은 미반영. [최종 결과와 남은 범위](handoffs/S5-integration.md). 아래 준비/미반영 기록은 이전 이력이다.

@@ -1,0 +1,133 @@
+{
+  "captured_on_kst": "2026-10-15",
+  "source_commit": "db98102ece2e6d3baab02d259e453b3cf35ed32f",
+  "browser": {
+    "url": "http://127.0.0.1:18751/",
+    "api": "http://127.0.0.1:18316",
+    "stock": "005930",
+    "start": "2026-06-01",
+    "as_of": "2026-06-30",
+    "report": "11011",
+    "basis": "CFS",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "mode": "real CSV API, no request interception",
+    "page_errors": [],
+    "summary": "KOSPI : 005930 / COMPANY OVERVIEW\n\n삼성전자기업 리포트\n\n실적 개선·시장 대비 강세 동행\n\n기준일 종가 · 2026-06-30\n333,000 원\n제공 데이터 기준 · 실시간 시세 아님\n매출 전년동기 성장률\n10.88 %\n공시 재무 YTD 기준\n공시 후 시장 대비 성과\n32.77 %p\n2026-03-09 ~ 2026-06-30\n복합 동반 개선\n조건 미충족\n사용 가능",
+    "metadata": [
+      "API 데이터 · API 1.1.0 · 분석 AVAILABLE · 입력 handoff-sha256:89e81d3d549f6ea0 · 계산 c-gold-0.1.0 · 최종일 2026-06-30"
+    ]
+  },
+  "api_meta": {
+    "api_version": "1.1.0",
+    "data_version": "handoff-sha256:89e81d3d549f6ea0",
+    "source_backend": "csv",
+    "data_min_date": "2022-12-01",
+    "data_final_date": "2026-06-30",
+    "stock_count": 20,
+    "calculation_version": "c-gold-0.1.0",
+    "analysis_status": "AVAILABLE",
+    "synthetic": false,
+    "input_version": "handoff-sha256:89e81d3d549f6ea0",
+    "analysis_data_version": "c-artifact-sha256:5e85c1ad8d7cc011643b1fb57f4b7e17c09b9d389308647e957338109d399d0f",
+    "units": {
+      "amount": "KRW",
+      "quantity": "shares",
+      "ratio": "decimal_fraction"
+    },
+    "numeric_encoding": "decimal_string"
+  },
+  "api_validation": {
+    "overall": "PASS",
+    "results": [
+      {
+        "check": "daily analysis (all stocks, all dates)",
+        "status": "PASS",
+        "rows_gold": 17440,
+        "rows_api": 17440,
+        "rows_compared": 17440,
+        "cells_compared": 1587040,
+        "value_diff_count": 0
+      },
+      {
+        "check": "financial report analysis (all reports)",
+        "status": "PASS",
+        "rows_gold": 320,
+        "rows_api": 320,
+        "rows_compared": 320,
+        "cells_compared": 17280,
+        "value_diff_count": 0
+      },
+      {
+        "check": "compare as_of=2026-06-30",
+        "status": "PASS",
+        "rows_gold": 20,
+        "rows_api": 20,
+        "rows_compared": 20,
+        "cells_compared": 1820,
+        "value_diff_count": 0
+      },
+      {
+        "check": "export g_fin_rpt_analysis.csv",
+        "status": "PASS",
+        "rows_gold": 320,
+        "rows_api": 320,
+        "rows_compared": 320,
+        "cells_compared": 17280,
+        "value_diff_count": 0,
+        "byte_identical": true
+      },
+      {
+        "check": "export g_stock_daily_analysis.csv",
+        "status": "PASS",
+        "rows_gold": 17440,
+        "rows_api": 17440,
+        "rows_compared": 17440,
+        "cells_compared": 1587040,
+        "value_diff_count": 0,
+        "byte_identical": false
+      }
+    ]
+  },
+  "attachment_review": {
+    "zip_sha256": "3c576178ab273e9d736c9beec82401791b50937f03f10cebd4fecc1a5846926c",
+    "zip_members": 18,
+    "crc": "PASS",
+    "receipt_entries": 32,
+    "receipt_payload_pass": 32,
+    "scope": "Embedded historical receipt inspected; original B ZIP not supplied here, so its 32 payload hashes were not independently rerun",
+    "source_integration": "db98102ece2e6d3baab02d259e453b3cf35ed32f"
+  },
+  "images": {
+    "01-overview.png": {
+      "sha256": "feaa68e3646f4e6627c37f42aad3e91348e3efd14a7fc2fc3b8e135f810af441",
+      "bytes": 236599
+    },
+    "02-price.png": {
+      "sha256": "2541b2bc0a9392a86ad5235ef32f52c44e5b7e71b62f4ba49bceabb16c728a04",
+      "bytes": 156581
+    },
+    "03-financial-bars.png": {
+      "sha256": "6aa836ab54756d1c7e0933a844fc8a0c9ae51d313671987b784f56409e818015",
+      "bytes": 121611
+    },
+    "04-financial-trend.png": {
+      "sha256": "97501d37e19ad9bcdeaa4370b7640d62345e8459d18498acc7c29b9485f8093f",
+      "bytes": 147474
+    },
+    "05-investor-flow.png": {
+      "sha256": "b719722e15621853e0b2bf41be56b9b9cd5bd668848b2c75929512f68af3f733",
+      "bytes": 119267
+    },
+    "06-comparison.png": {
+      "sha256": "9601a436a9cf4ac732d4b76bf885683595bdc0b9314293dedfc783927b17ffd2",
+      "bytes": 126871
+    },
+    "07-evidence.png": {
+      "sha256": "118e60a6d097988c0d228d487f06b6cd9bfb82f555e026c83c97909b2622a125",
+      "bytes": 170745
+    }
+  }
+}

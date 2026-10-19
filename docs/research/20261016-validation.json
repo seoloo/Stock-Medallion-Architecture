@@ -1,0 +1,260 @@
+{
+  "status": "PASS",
+  "schema": "tz_teamzero_research_20261016",
+  "server_version": "9.5.0",
+  "completed_at": "2026-10-16T09:33:32.458278+09:00",
+  "tables": [
+    {
+      "table": "s_cmn_cd",
+      "rows": 133,
+      "status": "PASS",
+      "sha256": "7004afcca22db43af4a9d8bccf04a352f67fb9a2abe4ddd6389f77fdd208c1a6",
+      "values_digest": "da412c5d43c8a57d9352777ce1b498958f0141ed3181de5b88765d3dcb57ff02"
+    },
+    {
+      "table": "s_corp",
+      "rows": 20,
+      "status": "PASS",
+      "sha256": "5ea82bd832c8340164a048bf72a45ad11cf5dab3fdc525039c75cadc3ed03ad6",
+      "values_digest": "b350a348d17cc24e37c0e2b7fcfebfafc26446a2d0b226be1c347765695a2cab"
+    },
+    {
+      "table": "s_stock",
+      "rows": 20,
+      "status": "PASS",
+      "sha256": "a75eadabfb13f12cf3697066305ac2842755a907734b088d750f9f671e0b342d",
+      "values_digest": "304a1b92eca189586f5c4cf1282e192c0e2bc1d71986d84df93053281caf2101"
+    },
+    {
+      "table": "s_dscl",
+      "rows": 11748,
+      "status": "PASS",
+      "sha256": "db5bb347d9ce5f4a847c7a01a91e3c675a7debef51061858b5c694182d06293c",
+      "values_digest": "31c232807ac71d546636a7367c5b4a19890006b02675af291b2d9a31a96d6f89"
+    },
+    {
+      "table": "s_dscl_doc",
+      "rows": 753,
+      "status": "PASS",
+      "sha256": "61cef4748f91b0e11426271642786a2b27268b356f4508307de079b4c52ab46f",
+      "values_digest": "9f1eb5128ea8ff75c483d39f98b66b45bc571ea1f55c1fb4ad1066cf5fa2fd7d"
+    },
+    {
+      "table": "s_fin_rpt",
+      "rows": 320,
+      "status": "PASS",
+      "sha256": "59e7ce5db24bd85266fcd860d7c73c58ce1521e4fd2e185997ed15d9ef115350",
+      "values_digest": "bf8498a622b331b484e420cd143a3fe9e7739fdcf56f3a6128fb4e8a92a44ee6"
+    },
+    {
+      "table": "s_fin_mtrc_def",
+      "rows": 36,
+      "status": "PASS",
+      "sha256": "5df36dc3439d69c36678f9f48724634824453798a04a3ec702b24a236b6610b2",
+      "values_digest": "a80467cbad572ee94e7cde00fbd2a12ffc35882168b1f542a9a8cb2b84dbe2c1"
+    },
+    {
+      "table": "s_fin_mtrc",
+      "rows": 30080,
+      "status": "PASS",
+      "sha256": "512842b31686ed13662e10ce3d5373e57b951654d2d6cc2409be8d4589ec38d9",
+      "values_digest": "637cee2b7d9374b6e6e6016586e9e5d413844a76687bc8ffa7b491e92459ad5b"
+    },
+    {
+      "table": "s_fin_item",
+      "rows": 66729,
+      "status": "PASS",
+      "sha256": "21887c033eca5cdc0bd1f61f3f763dc89496357b3c77ef1ed48079720a864e55",
+      "values_digest": "5aee93e1d93f764e53b8ca92153136f16f5a3dfa5c5490bcf1d2dea5569fa682"
+    },
+    {
+      "table": "s_stock_daily_prc",
+      "rows": 17440,
+      "status": "PASS",
+      "sha256": "1979277510c6b839f0831b5b79e5c249b841e31aa1994ced1f56c84ce60bd97c",
+      "values_digest": "4f23aee33e38bfc073d7824d5b9719ec2723ce050ec6e8d2fe003ee25ab76ba5"
+    },
+    {
+      "table": "s_idx_daily_prc",
+      "rows": 1744,
+      "status": "PASS",
+      "sha256": "8d864d4c493ffad32a0b9835f7c9a3ef9c4fe9b295e682fb869ed21d05c6cbce",
+      "values_digest": "836ecc8a5795fb11c449b429d8dc037242a6bea63e81140e8b905abeef225c0c"
+    },
+    {
+      "table": "s_invstr_trd_daily",
+      "rows": 191829,
+      "status": "PASS",
+      "sha256": "d6f01d4fece3075b9d6a90e4eaae7d9a0a72cd2d8daf22a1a3048b657a90ca02",
+      "values_digest": "c8e9a37b12697005bfc4bd1528251b6ea3a80e7185590d6ec448e0f4e8d31d75"
+    },
+    {
+      "table": "s_frgn_hold_daily",
+      "rows": 17439,
+      "status": "PASS",
+      "sha256": "6b067c3db5e6baf279ef83ee5048c2d36d71cbcfd2a9499da26773f55cd0a695",
+      "values_digest": "00c1f96309029fbd8d387f97731bbe35ee93dca4ae0149a096dbb7886b8820ff"
+    },
+    {
+      "table": "s_cfd_bal_daily",
+      "rows": 13719,
+      "status": "PASS",
+      "sha256": "f526707c01537b67d71a8570718d0da0aa5fedb9303ebaa5cd6c051b3f4920b2",
+      "values_digest": "fc9346e43cb39c4ab3901aa7877d1bdbbaeff8ad1f42fc0085025d3f744eca25"
+    },
+    {
+      "table": "s_corp_stock_map",
+      "rows": 20,
+      "status": "PASS",
+      "sha256": "5f581f25343c1c5a1cc33204b12b24230200a0befa9cb47b7416556bbdfd26de",
+      "values_digest": "aa91792b84094ffb21d5b1ea340d15ea30b9480dd86192b4c85c3ff4db2d1f68"
+    },
+    {
+      "table": "s_conn_stts",
+      "rows": 17440,
+      "status": "PASS",
+      "sha256": "72fd6e906a0cea48dfdbae65f4bc515c169828e708427e880b9cd983d07aa4eb",
+      "values_digest": "43fca0b0c182bc1be6fe5ebb08ab224ccec693d8e296f9c7d319cc1fc4f84a3a"
+    },
+    {
+      "table": "s_dq_issue",
+      "rows": 1967,
+      "status": "PASS",
+      "sha256": "5996a0d9b9acfdb4cefbe9b5b208b3533b8dc5dab53d72afe8d4c71aba71e240",
+      "values_digest": "4844af16a7f8d3817425dd9932d2d44479986225eb93160f9cb7cde6db1072fc"
+    },
+    {
+      "table": "g_ai_stock_daily",
+      "rows": 17440,
+      "status": "PASS",
+      "sha256": "5156e4259c906b443e883330e883828ac4ccadf9733e4c72ed3497f046384869",
+      "values_digest": "f5e6b9cd7a8b6f50920c2d3adfd0692cbce50f5097b8f4955150e185d553ea75"
+    },
+    {
+      "table": "g_fin_rpt_mkt_smry",
+      "rows": 320,
+      "status": "PASS",
+      "sha256": "fff00fa61966f4994674b6c0de68fc896cf7b54a49a57869c0b65c271c1e6d14",
+      "values_digest": "f6bc5af7e91ae74f9e265e3c0781813f5efc2f0a176abdef8c869eadd207b100"
+    },
+    {
+      "table": "research_source",
+      "rows": 173,
+      "status": "PASS"
+    },
+    {
+      "table": "research_market_daily",
+      "rows": 545,
+      "status": "PASS",
+      "values_digest": "a939ebf51501e2a646332efbefbd2b21c9eea2932fdb2acacc2cd6dc331d917f"
+    },
+    {
+      "table": "research_valuation",
+      "rows": 981,
+      "status": "PASS",
+      "values_digest": "10e8f17d99d0d9434f6ab7e4f959c8cf867d3f8dd728e98d3f6e84447faf8962"
+    },
+    {
+      "table": "research_financial",
+      "rows": 3200,
+      "status": "PASS",
+      "values_digest": "619cb5954aa065bd090ce3d05ddf1582741ce40527a845a10f2ef161be2e56c6"
+    },
+    {
+      "table": "research_company_info",
+      "rows": 141,
+      "status": "PASS",
+      "values_digest": "71ef910df5f59b9cb28e5dd4aff64483eb622629d76625baf3154d6c11fb7370"
+    },
+    {
+      "table": "research_ir_document",
+      "rows": 3,
+      "status": "PASS",
+      "values_digest": "c2dc2cc0b77547f9838cf8768f66ba0db452097ab8ea00d28c00a887a3dcd047"
+    },
+    {
+      "table": "research_official_metric",
+      "rows": 22,
+      "status": "PASS",
+      "values_digest": "e1bbd22e1b55008e170a8406c95ffc96aae0b7b46bdf088c7586f6bc24232c6a"
+    },
+    {
+      "table": "research_official_note",
+      "rows": 2,
+      "status": "PASS",
+      "values_digest": "f778852a8748765666eea2dbc76e84e3d760bdd3cb025fdc9c356035018e1420"
+    }
+  ],
+  "existing_database_unchanged": true,
+  "independent_checks": [
+    {
+      "check": "base_stocks",
+      "actual": 20,
+      "expected": 20,
+      "status": "PASS"
+    },
+    {
+      "check": "silver_rows",
+      "actual": 371437,
+      "expected": 371437,
+      "status": "PASS"
+    },
+    {
+      "check": "fresh_base_financial_coverage",
+      "actual": 20,
+      "expected": 20,
+      "status": "PASS"
+    },
+    {
+      "check": "all_pit_blocked",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "raw_hash_mismatch",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "market_duplicate_keys",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "foreign_rate_range",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "cashflow_not_zero_filled",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "legacy_pit_violations",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    }
+  ],
+  "collection": {
+    "sources": 173,
+    "errors": [],
+    "tables": {
+      "market_daily": 545,
+      "valuation": 981,
+      "financial": 3200,
+      "company_info": 141,
+      "ir_document": 3,
+      "official_metric": 22,
+      "official_note": 2
+    }
+  },
+  "tests": "python3 -m unittest discover -s scripts/research -v: 4 PASS",
+  "documented_sql_queries": "11 statements executed successfully"
+}
