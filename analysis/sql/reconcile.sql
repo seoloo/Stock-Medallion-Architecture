@@ -1,4 +1,6 @@
--- C's expected-result contract for B. READ ONLY. NOT executed against MySQL yet.
+-- C expected-result contract. Execute against the accepted Gold database.
+-- Session arithmetic setting only; no stored data is modified.
+SET SESSION div_precision_increment = 30;
 -- B must load the reviewed c-gold-0.1.0 schemas first; NULL fields are SQL NULL.
 -- Compare numerically as Decimal strings, ignoring trailing decimal zeros.
 SELECT 'financial_rows' AS check_id, CAST(COUNT(*) AS CHAR) AS result FROM tz_gold.g_fin_rpt_analysis
