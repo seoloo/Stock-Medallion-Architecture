@@ -1,0 +1,1360 @@
+{
+  "status": "PASS",
+  "mysql_version": "9.5.0",
+  "database": "tz_gold_analysis_20261015_162220_308b",
+  "tables": [
+    {
+      "table": "g_fin_rpt_analysis",
+      "rows": 320,
+      "status": "PASS",
+      "canonical_digest": "ddd2e43d19fc000fad078ce27779d0176aeb3eb2ebe2b5c13ea17b4632751cec"
+    },
+    {
+      "table": "g_stock_daily_analysis",
+      "rows": 17440,
+      "status": "PASS",
+      "canonical_digest": "1027a63c0f69bc0ea69524bb91385762238f38692f84c9db73dec8afa38dd709"
+    }
+  ],
+  "checks": [
+    {
+      "check": "g_fin_rpt_analysis.fin_rpt_id.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.corp_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.bsns_yr.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.rpt_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.fs_div_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.rcept_no.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.crncy_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.flow_prd_mm_cnt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.flow_prd_mm_cnt.sum",
+      "actual": "2400",
+      "expected": "2400",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.prd_start_dt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.prd_end_dt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.dscl_join_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.cal_prd_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.cf_prd_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.pit_join_elig_yn.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.same_prd_cmpr_elig_yn.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.mtrc_review_cnt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.mtrc_review_cnt.sum",
+      "actual": "1733",
+      "expected": "1733",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.custom_map_cnt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.custom_map_cnt.sum",
+      "actual": "317",
+      "expected": "317",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.mtrc_conflict_cnt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.mtrc_conflict_cnt.sum",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.core_mtrc_miss_txt.nulls",
+      "actual": 320,
+      "expected": 320,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.src_team_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.src_file_path.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.src_row_no.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.src_row_no.sum",
+      "actual": "51360",
+      "expected": "51360",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.src_ver.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.pipln_ver.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.stock_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.dscl_dt.nulls",
+      "actual": 61,
+      "expected": 61,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.rev_ytd_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.rev_ytd_amt.sum",
+      "actual": "8496305502116058",
+      "expected": "8496305502116058",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.rev_prior_ytd_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.rev_prior_ytd_amt.sum",
+      "actual": "7931110967099968",
+      "expected": "7931110967099968",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_prft_ytd_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_prft_ytd_amt.sum",
+      "actual": "788737136422650",
+      "expected": "788737136422650",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_prft_prior_ytd_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_prft_prior_ytd_amt.sum",
+      "actual": "770063675886501",
+      "expected": "770063675886501",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.net_incm_ytd_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.net_incm_ytd_amt.sum",
+      "actual": "701545346865405",
+      "expected": "701545346865405",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.net_incm_prior_ytd_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.net_incm_prior_ytd_amt.sum",
+      "actual": "709416740037809",
+      "expected": "709416740037809",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_ytd_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_ytd_amt.sum",
+      "actual": "1106833612840453",
+      "expected": "1106833612840453",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_prior_ytd_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_prior_ytd_amt.sum",
+      "actual": "988740034967938",
+      "expected": "988740034967938",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.tot_asst_asof_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.tot_asst_asof_amt.sum",
+      "actual": "21772229774229047",
+      "expected": "21772229774229047",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.tot_liab_asof_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.tot_liab_asof_amt.sum",
+      "actual": "9137452055098400",
+      "expected": "9137452055098400",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.tot_eqty_asof_amt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.tot_eqty_asof_amt.sum",
+      "actual": "12634777719130647",
+      "expected": "12634777719130647",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.rev_yoy_rt.nulls",
+      "actual": 61,
+      "expected": 61,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.rev_yoy_rt.sum",
+      "actual": "41.29055418",
+      "expected": "41.29055418",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.rev_yoy_rt_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_margin_rt.nulls",
+      "actual": 61,
+      "expected": 61,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_margin_rt.sum",
+      "actual": "27.73739792",
+      "expected": "27.73739792",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_margin_rt_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.debt_equity_rt.nulls",
+      "actual": 61,
+      "expected": 61,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.debt_equity_rt.sum",
+      "actual": "230.07897867",
+      "expected": "230.07897867",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.debt_equity_rt_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_sales_rt.nulls",
+      "actual": 61,
+      "expected": 61,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_sales_rt.sum",
+      "actual": "38.00999350",
+      "expected": "38.00999350",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_sales_rt_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_yoy_rt.nulls",
+      "actual": 106,
+      "expected": 106,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_yoy_rt.sum",
+      "actual": "846.76754269",
+      "expected": "846.76754269",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_yoy_rt_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_prft_delta_amt.nulls",
+      "actual": 61,
+      "expected": 61,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_prft_delta_amt.sum",
+      "actual": "-2612154409565",
+      "expected": "-2612154409565",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_prft_delta_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_prft_transition_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_delta_amt.nulls",
+      "actual": 61,
+      "expected": 61,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_delta_amt.sum",
+      "actual": "114311180294361",
+      "expected": "114311180294361",
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.op_cf_delta_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.review_required_yn.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_fin_rpt_analysis.calc_ver.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.stock_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.trd_dt.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.corp_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.mkt_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.open_prc.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.open_prc.sum",
+      "actual": "3225817572.0000",
+      "expected": "3225817572.0000",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.high_prc.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.high_prc.sum",
+      "actual": "3294191649.0000",
+      "expected": "3294191649.0000",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.low_prc.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.low_prc.sum",
+      "actual": "3158301071.0000",
+      "expected": "3158301071.0000",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.close_prc.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.close_prc.sum",
+      "actual": "3223574956.0000",
+      "expected": "3223574956.0000",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.trd_qty.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.trd_qty.sum",
+      "actual": "45807065155",
+      "expected": "45807065155",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.close_rtn_rt.nulls",
+      "actual": 20,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.close_rtn_rt.sum",
+      "actual": "18.78361572",
+      "expected": "18.78361572",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_close_prc.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_close_prc.sum",
+      "actual": "43896579.3400",
+      "expected": "43896579.3400",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_rtn_rt.nulls",
+      "actual": 20,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_rtn_rt.sum",
+      "actual": "21.24712090",
+      "expected": "21.24712090",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_net_buy_qty.nulls",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_net_buy_qty.sum",
+      "actual": "-25748493",
+      "expected": "-25748493",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_net_buy_qty.nulls",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_net_buy_qty.sum",
+      "actual": "-318763776",
+      "expected": "-318763776",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_net_buy_qty.nulls",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_net_buy_qty.sum",
+      "actual": "75303325",
+      "expected": "75303325",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.other_corp_net_buy_qty.nulls",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.other_corp_net_buy_qty.sum",
+      "actual": "266785626",
+      "expected": "266785626",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_hold_rt.nulls",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_hold_rt.sum",
+      "actual": "5201.40420000",
+      "expected": "5201.40420000",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.cfd_buy_bal_rt.nulls",
+      "actual": 3721,
+      "expected": 3721,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.cfd_buy_bal_rt.sum",
+      "actual": "6.29950000",
+      "expected": "6.29950000",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.invstr_exist_yn.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.fin_avail_yn.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.fin_rpt_id.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.fin_bsns_yr.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.fin_rpt_cd.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.fin_fs_div_cd.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.dscl_dt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.dscl_elps_day_cnt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.dscl_elps_day_cnt.sum",
+      "actual": "807594",
+      "expected": "807594",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rev_ytd_amt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rev_ytd_amt.sum",
+      "actual": "430080336004348987",
+      "expected": "430080336004348987",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_prft_ytd_amt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_prft_ytd_amt.sum",
+      "actual": "38343651911149174",
+      "expected": "38343651911149174",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.net_incm_ytd_amt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.net_incm_ytd_amt.sum",
+      "actual": "35490291243324713",
+      "expected": "35490291243324713",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_cf_ytd_amt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_cf_ytd_amt.sum",
+      "actual": "57796204112897167",
+      "expected": "57796204112897167",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.tot_asst_amt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.tot_asst_amt.sum",
+      "actual": "1111213060289519632",
+      "expected": "1111213060289519632",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.tot_liab_amt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.tot_liab_amt.sum",
+      "actual": "460444692218553517",
+      "expected": "460444692218553517",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.tot_eqty_amt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.tot_eqty_amt.sum",
+      "actual": "650768368070966115",
+      "expected": "650768368070966115",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.pipln_ver.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rev_yoy_rt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rev_yoy_rt.sum",
+      "actual": "2501.57289799",
+      "expected": "2501.57289799",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rev_yoy_rt_stts_cd.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_margin_rt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_margin_rt.sum",
+      "actual": "1714.15382849",
+      "expected": "1714.15382849",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_cf_delta_amt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_cf_delta_amt.sum",
+      "actual": "7121370215872151",
+      "expected": "7121370215872151",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_cf_sales_rt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_cf_sales_rt.sum",
+      "actual": "2326.32085436",
+      "expected": "2326.32085436",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.op_prft_transition_cd.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.review_required_yn.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.cal_prd_stts_cd.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.cf_prd_stts_cd.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.same_prd_cmpr_elig_yn.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rtn_1d_rt.nulls",
+      "actual": 20,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rtn_1d_rt.sum",
+      "actual": "18.78361572",
+      "expected": "18.78361572",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rtn_1d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_rtn_1d_rt.nulls",
+      "actual": 20,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_rtn_1d_rt.sum",
+      "actual": "21.24712090",
+      "expected": "21.24712090",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.excess_1d_rt.nulls",
+      "actual": 20,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.excess_1d_rt.sum",
+      "actual": "-2.46350518",
+      "expected": "-2.46350518",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.excess_1d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rtn_5d_rt.nulls",
+      "actual": 100,
+      "expected": 100,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rtn_5d_rt.sum",
+      "actual": "94.26308958",
+      "expected": "94.26308958",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rtn_5d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_rtn_5d_rt.nulls",
+      "actual": 100,
+      "expected": 100,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_rtn_5d_rt.sum",
+      "actual": "106.28991210",
+      "expected": "106.28991210",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.excess_5d_rt.nulls",
+      "actual": 100,
+      "expected": 100,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.excess_5d_rt.sum",
+      "actual": "-12.02682252",
+      "expected": "-12.02682252",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.excess_5d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rtn_20d_rt.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rtn_20d_rt.sum",
+      "actual": "410.19709228",
+      "expected": "410.19709228",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.rtn_20d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_rtn_20d_rt.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.idx_rtn_20d_rt.sum",
+      "actual": "441.74269078",
+      "expected": "441.74269078",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.excess_20d_rt.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.excess_20d_rt.sum",
+      "actual": "-31.54559850",
+      "expected": "-31.54559850",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.excess_20d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_net_5d_qty.nulls",
+      "actual": 85,
+      "expected": 85,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_net_5d_qty.sum",
+      "actual": "-1508638464",
+      "expected": "-1508638464",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_flow_5d_rt.nulls",
+      "actual": 92,
+      "expected": 92,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_flow_5d_rt.sum",
+      "actual": "-134.82596095",
+      "expected": "-134.82596095",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_flow_5d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_net_5d_qty.nulls",
+      "actual": 85,
+      "expected": 85,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_net_5d_qty.sum",
+      "actual": "361274154",
+      "expected": "361274154",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_flow_5d_rt.nulls",
+      "actual": 92,
+      "expected": 92,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_flow_5d_rt.sum",
+      "actual": "-44.18403691",
+      "expected": "-44.18403691",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_flow_5d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_net_5d_qty.nulls",
+      "actual": 85,
+      "expected": 85,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_net_5d_qty.sum",
+      "actual": "-197439316",
+      "expected": "-197439316",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_flow_5d_rt.nulls",
+      "actual": 92,
+      "expected": 92,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_flow_5d_rt.sum",
+      "actual": "114.07595032",
+      "expected": "114.07595032",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_flow_5d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_net_20d_qty.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_net_20d_qty.sum",
+      "actual": "-5529722998",
+      "expected": "-5529722998",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_flow_20d_rt.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_flow_20d_rt.sum",
+      "actual": "-139.63257819",
+      "expected": "-139.63257819",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_flow_20d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_net_20d_qty.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_net_20d_qty.sum",
+      "actual": "1390299328",
+      "expected": "1390299328",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_flow_20d_rt.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_flow_20d_rt.sum",
+      "actual": "-12.22033114",
+      "expected": "-12.22033114",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.inst_flow_20d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_net_20d_qty.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_net_20d_qty.sum",
+      "actual": "-1234653909",
+      "expected": "-1234653909",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_flow_20d_rt.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_flow_20d_rt.sum",
+      "actual": "89.75444433",
+      "expected": "89.75444433",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.indv_flow_20d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_hold_change_20d_rt.nulls",
+      "actual": 402,
+      "expected": 402,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_hold_change_20d_rt.sum",
+      "actual": "-20.21250000",
+      "expected": "-20.21250000",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.frgn_hold_change_20d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.volatility_20d_rt.nulls",
+      "actual": 400,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.volatility_20d_rt.sum",
+      "actual": "464.44888732",
+      "expected": "464.44888732",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.volatility_20d_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.event_base_dt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.event_rtn_rt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.event_rtn_rt.sum",
+      "actual": "821.49198907",
+      "expected": "821.49198907",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.event_idx_rtn_rt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.event_idx_rtn_rt.sum",
+      "actual": "922.96255698",
+      "expected": "922.96255698",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.event_excess_rt.nulls",
+      "actual": 1607,
+      "expected": 1607,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.event_excess_rt.sum",
+      "actual": "-101.47056791",
+      "expected": "-101.47056791",
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.event_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.co_move_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.co_move_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.joint_improve_yn.nulls",
+      "actual": 1627,
+      "expected": 1627,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.joint_improve_stts_cd.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "g_stock_daily_analysis.calc_ver.nulls",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "pit_date_violations",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "revenue_growth_mismatches",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    }
+  ],
+  "scope": "new C Gold only; does not certify historical 58-table or Bronze replay",
+  "source_integration_commit": "db98102ece2e6d3baab02d259e453b3cf35ed32f",
+  "environment": "macOS arm64, isolated MySQL 9.5.0 on loopback; not production or historical B database",
+  "artifact_sha256": {
+    "g_fin_rpt_analysis.csv": "4514982c57d1de11ba0cee6899e114d229d730d96c12ea0e17703255a6fcd22b",
+    "g_stock_daily_analysis.csv": "a094a995d44fd8b8fe73045e8a51ce4e4b6eadff6e9d42feba9cb897b0470707"
+  }
+}

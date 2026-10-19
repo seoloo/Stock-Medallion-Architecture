@@ -1,152 +1,187 @@
-# TEAM ZERO
+# ZERO ↗ · 기업의 흐름을 읽다
 
-## 기업 실적·투자자 수급·주가 동행/괴리 분석 대시보드
+**실적은 좋아졌는데 주가는 왜 다르게 움직일까요?**
+TEAM ZERO는 기업 실적·현금흐름·투자자 수급·주가를 연결해, 함께 개선되는 구간과 서로 어긋나는 구간을 탐색하는 데이터 분석 대시보드입니다.
 
-**정제·표준화가 완료된 Silver 데이터를 활용해, 기업 실적·현금흐름·투자자 수급과 시장 대비 주가 움직임을 함께 비교하는 웹 서비스를 만든다.**
+[화면 둘러보기](docs/dashboard-gallery.md) · [로컬 실행](#로컬-실행) · [데이터와-레이어](#bronze--silver--gold) · [검증 결과](#검증-결과) · [팀 개발 안내](START_HERE.md)
 
-사용자는 종목과 기준일을 선택하고, 당시 공개되어 있던 실적과 현금흐름이 개선됐는지, 주가가 시장보다 강했는지, 외국인·기관이 순매수했는지 근거와 함께 확인할 수 있다.
+![ZERO 기업 리포트 — 실제 API 연결 화면](docs/media/dashboard/01-overview.jpg)
 
-## 화면 미리보기
+> **분석 범위:** 20종목 · 가격 872거래일 · 재무 보고서 320건 · 데이터 최종일 2026-06-30
+> 고정 데이터 기반의 분석 서비스입니다. 동행·괴리는 관측 결과이며 인과관계나 매매 추천을 뜻하지 않습니다.
 
-별도 실행 없이 아래 GIF로 주요 화면을 확인할 수 있습니다. **실제 B API + C 분석을 연결한 integration 화면**이며, 데이터 기준일은 2026-06-30입니다.
+## 무엇을 볼 수 있나요?
 
-[![기업 개요·주가·실적·수급·종목 비교 화면 투어](docs/media/dashboard/dashboard-tour.gif)](docs/dashboard-gallery.md)
+| 화면 | 확인할 수 있는 내용 |
+|---|---|
+| 기업 개요 | 기준일 종가, 매출 성장률, 시장 대비 성과, 복합 동반 개선 여부 |
+| 주가와 시장 | 조회 구간 첫 관측일을 100으로 맞춘 종목·시장 추이 |
+| 실적과 현금흐름 | 같은 보고서 유형의 매출·영업이익·순이익·영업현금흐름 비교 |
+| 투자자 수급 | 외국인·기관 순매수, 관측 구간별 수급과 가격의 흐름 |
+| 종목 비교 | 매출 성장과 공시 후 시장 대비 성과의 동행·괴리 비교 |
+| 판단 근거 | 계산식·기간·보고서·연결/별도·출처·품질 상태와 정확한 원값 |
+| CSV 다운로드 | 현재 조회 조건의 데이터와 분석 결과 반출 |
 
-[주요 화면 7장 크게 보기](docs/dashboard-gallery.md) · [UI 병합 및 검증 결과](docs/handoffs/A-visual-merge.md)
+차트의 관측점 탐색·범례 선택·기간 필터를 지원합니다. 큰 금액은 조·억 단위로 읽고, 원값 보기와 CSV에서 정확한 값을 확인할 수 있습니다.
 
-GIF는 실제 화면 캡처를 순서대로 보여주는 약 25초 반복 투어입니다. 재무 막대 → 추이 전환을 포함합니다. 실시간 시세나 서비스 배포 주소가 아닙니다.
+<details>
+<summary><strong>화면 투어 보기</strong></summary>
 
-## 역할을 선택하고 바로 시작하기
+![실제 대시보드 7개 장면 투어](docs/media/dashboard/dashboard-tour.gif)
 
-Team-Zero를 Codex 또는 Claude Code에서 열고 **자기 역할의 아래 문장을 한 번 복사해 전달**한다. 에이전트가 저장소 지침·역할별 작업을 읽고 구현·검증·인수인계까지 진행한다. 상세 준비는 [START_HERE](START_HERE.md)를 따른다.
+실제 API 연결 화면 7장을 순환하는 GIF입니다. [원본 화면과 설명](docs/dashboard-gallery.md)에서 확대해 볼 수 있습니다.
 
-| 역할 | 담당 | 전체 작업 프롬프트 | 체크북 |
-|---|---|---|---|
-| **A 프론트엔드** | 이어진 | [A 시작](prompts/A_frontend.md) | A01~A10 |
-| **B 백엔드·Delta·MySQL** | 설호현 | [B 시작](prompts/B_backend.md) | B01~B12 |
-| **C Pandas 분석·시각화** | 김형준 | [C 시작](prompts/C_analysis.md) | C01~C12 |
-
-**A 이어진 — 복사해서 시작**
-
-```text
-이 저장소의 AGENTS.md와 START_HERE.md를 읽고 prompts/A_frontend.md를 실행 지침으로 삼아 A 프론트엔드 작업을 구현·검증·인수인계까지 진행해 줘. 기존 변경을 보존하고, 없는 입력만 구체적으로 물어보면서 독립 작업은 계속해 줘.
-```
-
-**B 설호현 — 복사해서 시작**
-
-```text
-이 저장소의 AGENTS.md와 START_HERE.md를 읽고 prompts/B_backend.md를 실행 지침으로 삼아 B 백엔드·Delta·MySQL 작업을 구현·검증·인수인계까지 진행해 줘. 기존 변경을 보존하고, 없는 입력만 구체적으로 물어보면서 독립 작업은 계속해 줘.
-```
-
-**C 김형준 — 복사해서 시작**
-
-```text
-이 저장소의 AGENTS.md와 START_HERE.md를 읽고 prompts/C_analysis.md를 실행 지침으로 삼아 C Pandas 분석·시각화 작업을 구현·검증·인수인계까지 진행해 줘. 기존 변경을 보존하고, 없는 입력만 구체적으로 물어보면서 독립 작업은 계속해 줘.
-```
-
-현재 고정 인계75파일과 기존 처리 코드에 더해 **B의 실제 Delta·MySQL·읽기 전용 API·덤프 복원 검증**이 준비됐다. [API 설치·실행](backend/service/README.md), [B→A 전달](docs/handoffs/S4-B-to-A.md), [검증](docs/handoffs/G04-validation.md)을 따른다. 팀원은 CSV 모드로 바로 시작할 수 있다. C 신규 분석 Gold와 A 화면 연결·공동 수신 검증은 대기 상태다.
-
-원래 과제인 **「레거시 데이터의 AI Ready Data 변환 및 표준 사전 구축」**에서 Bronze·Silver까지 완료된 데이터를 바탕으로, 목적별 지표와 분석 서비스를 제공하는 Gold를 완성하는 것이 현재 팀의 목표다.
-
-## 최종 목표
-
-> 보유한 20개 종목의 기업 실적·투자자 수급·주가를 공시 시점에 맞게 연결하고, 실적 개선과 시장 대비 주가 움직임의 동행·괴리를 탐색할 수 있는 웹 대시보드를 완성한다.
-
-- 기업별 실적 성장률·수익성·재무안정성을 비교한다.
-- 외국인·기관 순매수와 외국인 보유율 변화를 확인한다.
-- 종목 성과를 해당 시장 지수와 같은 기간으로 비교한다.
-- 분석에 사용한 보고서, 공시일, 계산 구간과 자료 부재 사유를 확인한다.
-- 분석 결과를 CSV로 내려받는다.
+</details>
 
 ## Bronze → Silver → Gold
 
-| 레이어 | 목적 | 주요 내용 | 상태 |
-|---|---|---|---|
-| **Bronze** | C가 받은 A/B 인계본을 그대로 보존 | `tz_bronze` 18테이블, 원천 TEXT + 적재 행·파일·해시·실행 ID | 과거 구현 기록·DDL 포함. **원본 CSV 18개·DB 덤프는 미포함** |
-| **Silver** | 표준화된 통합 데이터 | 표준 코드·타입·명명, 키·관계, 기업-종목 매핑, 시점 연결 및 가용성 관리 | 완료 — 실제 CSV 전체 검토 |
-| **Gold** | 목적별 분석과 서비스 | 실적 지표, 기간별 수급·시장 대비 성과, 동행/괴리 분류, 대시보드 조회 데이터 | 통합·기간 요약 초안 존재, 분석 지표·웹 서비스 개발 예정 |
+이번 프로젝트는 **완료된 Silver 인계본을 활용해 분석 목적의 Gold와 웹 서비스를 만드는 프로젝트**입니다. 기존 표준 사전과 변환 결과를 재사용하며, 추가 확보한 원본의 저장·검증은 별도 파이프라인에서 수행합니다.
 
-```text
-기업·공시·재무 / 종목·가격·지수·수급 원본
-                    ↓
-Bronze: 원본 보존 + 출처·버전 추적
-                    ↓
-Silver: 표준화 + 관계 연결 + 가용성·시점 관리
-                    ↓
-Gold: 실적 분석 + 수급 분석 + 시장 대비 성과 + 동행/괴리 탐색
-                    ↓
-비교 대시보드 → 종목 상세 → 계산 근거 → 결과 다운로드
+```mermaid
+flowchart LR
+    B["Bronze · 원본 보존\n출처·복구 이력·격리"] --> S["Silver · 표준 데이터\n기업·공시·재무·가격·수급"]
+    S --> C["Pandas · Gold 계산\n기간·시점·정밀도 검증"]
+    C --> G["Gold · 분석 데이터\n보고서 320행 / 일별 17,440행"]
+    G --> D["Delta Lake\n로그·버전·재조회"]
+    D --> M["MySQL\n전량 값·SQL 대사"]
+    G --> P["검증된 CSV 묶음"]
+    P --> API["FastAPI · 읽기 전용 API"]
+    API --> W["웹 대시보드 · CSV"]
 ```
 
-현재 인계본은 MySQL에 Medallion 계층을 적용한 구조다. **최종 제출에는 실제 Bronze·Silver·Gold Delta 저장·조회, `_delta_log`·버전 증빙, Delta↔MySQL 대사를 포함한다.** B가 실행·저장을, C가 계산·Pandas 대조를 맡는다. 기존 원본·Silver·표준 사전·검증은 재사용하고 부족한 증빙을 보완한다.
+그림의 웹 수용 검증 경로는 **CSV 묶음 → API → 화면**입니다. 신규 Gold의 Delta·MySQL 저장은 실제 검증했으며, 신규 MySQL 테이블에서 API까지 직접 조회하는 경로와 구분합니다.
 
-## 보유 데이터
+| 레이어 | 담는 내용 | 보존·활용 방식 |
+|---|---|---|
+| **Bronze** | OpenDART·증권 데이터 입력, 원본 메타, 정화·복구·격리 이력 | 입력 출처와 변경 근거를 추적합니다. 원본 보유 여부와 최초 오염 원본 재현 여부를 구분합니다. |
+| **Silver** | 기업·종목·매핑, 공시·원문 메타, 재무 보고서·지표·계정, 가격·지수·투자자 수급·보유·CFD·품질 이슈 | 제공된 **17테이블·371,437행**을 읽기 전용으로 재사용합니다. 키·단위·기간·상태를 유지합니다. |
+| **Gold** | 보고서별 실적·현금흐름 지표, 일별 가격·시장 성과·수급 윈도·시점 재무·동행 분류 | 기존 Gold 2개를 보존하고, 목적별 분석 Gold 2개를 추가합니다. |
 
-**[data/03_C_integration_20261014](data/03_C_integration_20261014/)에 사용자가 제공한 75파일 전체(약 99.7 MiB)를 원본 바이트 그대로 보존했다.** Silver·Gold CSV, 표준 사전 Excel·CSV, DDL·ERD, 코드·보고서·검증 기록을 clone으로 받을 수 있다.
+### 분석용 Gold 테이블
 
-- [데이터 사용 및 Bronze·Silver 상세](docs/data-guide.md): 레이어별 실제 내용·입력·변환·누락·역할별 사용법.
-- [전체 컬럼 사전](docs/data-catalog.md): Bronze 18테이블 DDL 컬럼, Silver·Gold·Meta 345개 표준 컬럼·타입·키·관계·실제 빈값.
-- [데이터 폴더 안내](data/README.md) · [75파일 무결성 명세](data/handoff_manifest.json).
+| 테이블 | 행 단위·건수 | 주요 결과 |
+|---|---|---|
+| `g_fin_rpt_analysis` | 재무 보고서 · **320행** | 전년동기 매출 성장, 영업이익률, 현금흐름 변화·매출 대비 현금흐름, 재무 상태·검증 플래그 |
+| `g_stock_daily_analysis` | 종목 × 거래일 · **17,440행** | 수익률·시장 대비 성과, 5/20관측 수급, 시점 적격 재무, 동행·괴리 및 복합 동반 개선 |
 
-저장소 루트에서 별도 설치 없이 데이터 복사 상태를 확인한다(Python 3.10 이상):
+기업 20종목은 KOSPI 14개·KOSDAQ 6개입니다. 가격은 2022-12-01~2026-06-30, 재무는 2022~2025년 보고서입니다. 기존 `g_ai_stock_daily`·`g_fin_rpt_mkt_smry`와 신규 분석 테이블은 서로 다른 산출물입니다.
+
+[전체 테이블·컬럼·관계](docs/data-catalog.md) · [데이터 안내](docs/data-guide.md) · [Gold 스키마](analysis/evidence/schema.json) · [분석 계약](contracts/analysis.md)
+
+### 숫자를 해석하는 기준
+
+- **공시일 < 거래일:** 공시 시각이 없는 데이터에서 공시 당일 재무를 사용하지 않습니다.
+- **기간 구분:** YTD·Q3M·ASOF, 연결·별도, 검증 기간·가정 기간을 구분합니다.
+- **중복 합산 방지:** 일별로 연결된 재무를 반복 합산하거나 기관 합계와 기관 세부를 이중 합산하지 않습니다.
+- **정밀도 보존:** 금액은 원, 수급은 주, 비율은 소수 비율입니다. Decimal 기반 계산 결과를 API에서 문자열로 전달합니다.
+- **상태 보존:** NULL·0·미연결·격리·REVIEW를 구분합니다. 분모 0·음수 기준·관측 부족·기간 미검증은 계산 불가 사유로 표시합니다.
+
+## 로컬 실행
+
+### 1. 환경 준비
+
+macOS/Linux 기준입니다. **Python 3.12(B), Python 3.13(C), Node 22.12 이상**을 사용합니다. Windows 설정은 [B 서비스 안내](backend/service/README.md)를 참고하세요.
+
+```bash
+git clone https://github.com/2nd-MLOps-engineer-2/Team-Zero.git
+cd Team-Zero
+```
+
+현재 서비스 통합 기준은 `integration`입니다. main 승격 전에는 해당 브랜치 또는 이 README가 포함된 작업 브랜치를 사용합니다. 이미 작업 중이라면 변경을 보존한 후 통합합니다.
+
+```bash
+# 새 clone에서 서비스 통합본 사용
+git switch integration
+
+python3.12 -m venv build/b-venv
+build/b-venv/bin/python -m pip install -r backend/service/requirements.lock.txt
+python3.13 -m venv build/c-venv
+build/c-venv/bin/python -m pip install -r analysis/requirements.txt
+npm --prefix apps/web ci
+```
+
+### 2. Gold 생성·API 입력 준비
 
 ```bash
 python3 scripts/check_handoff.py
+build/c-venv/bin/python -m analysis.run --output build/analysis
+build/b-venv/bin/python backend/service/pack_c_analysis.py \
+  --source build/analysis --output build/c-artifact --project-root .
 ```
 
-이 명령은 원본을 수정하지 않고 75파일의 해시·크기와 CSV 33개의 헤더·건수를 검사한다. DB·Delta·API 실행 검사는 아니다.
+Silver는 저장소에 포함되어 있어 다시 업로드할 필요가 없습니다. API 묶음의 출력 경로가 이미 있으면 패키징 도구가 거부하므로 재실행할 때 새 출력 이름을 사용하세요.
 
-| 항목 | 범위 |
+### 3. API 실행
+
+```bash
+build/b-venv/bin/python backend/service/run.py \
+  --backend csv --project-root . --analysis-dir build/c-artifact --port 8000
+```
+
+### 4. 별도 터미널에서 화면 실행
+
+```bash
+VITE_DATA_MODE=api VITE_API_BASE_URL=http://127.0.0.1:8000 \
+  npm --prefix apps/web run dev -- --port 5173 --strictPort
+```
+
+- 대시보드: <http://127.0.0.1:5173>
+- OpenAPI: <http://127.0.0.1:8000/docs>
+- 종료: 각 터미널에서 `Ctrl+C`
+
+화면 기본 모드는 fixture입니다. 위 API 설정을 사용해야 실제 제공 데이터와 연결됩니다. `--analysis-dir`를 생략하면 신규 C 분석은 미연결 상태로 표시됩니다.
+
+## 검증 결과
+
+**2026-10-15 기준**, 실제 제공 데이터와 격리된 로컬 DB 및 GitHub CI로 확인한 결과입니다. 완료된 기능 통합과 최종 main 승격은 구분합니다.
+
+| 검증 | 결과 |
 |---|---|
-| Silver | **17개 테이블, 총 371,437행** |
-| 기업·종목 | 20개 — KOSPI 14, KOSDAQ 6 |
-| 주가 | 2022-12-01~2026-06-30, 872거래일, 17,440행 |
-| 투자자별 매매 | 191,829행 — 최상위 4유형과 기관 세부 7유형 |
-| 재무 보고서 | 2022~2025년, 320건 |
-| 재무 지표·상세 | 36개 지표의 기간별 값 30,080행, 상세 항목 66,729행 |
-| 공시 | 11,748건 |
-| 기존 Gold | 일별 통합 17,440행 × 34열, 보고기간 요약 320행 × 21열 |
+| 인계본 무결성 | 75파일 해시·크기, 33 CSV 헤더·건수 PASS |
+| Gold 재생성 | 320 + 17,440행, 기존 제출 결과 해시 일치 |
+| Delta → MySQL | 두 Gold 전체 행·컬럼 값 일치 |
+| 독립 SQL | **222개 PASS** — NULL·합계·공시일·성장률 대사 |
+| C / B API | **49 PASS / 49 PASS·2 SKIP** |
+| B 저장 안전성 | 모의 환경 **6 PASS** |
+| A 단위 / 빌드 / 브라우저 | **17 PASS / PASS / 18 PASS** |
+| 실제 CSV API·다운로드 | 일별·재무·20종목 비교, 값 차이 **0** |
+| GitHub 통합 CI | **PASS** — MySQL 8.4·실제 API·브라우저 포함 |
 
-**포함되지 않은 자료:** Bronze의 A/B 입력 원본 18개, 별도 MySQL 덤프, 공시 원문 ZIP, 실제 Delta 테이블·로그. `01_profiling`의 AS-IS는 C 통합 전 A/B 인계본 진단 기록이며, 최초 교환 오염 원본 전체가 포함됐다는 뜻이 아니다. 기존 인계 코드의 전체 재실행에는 이 추가 입력과 DB 환경이 필요하다. Silver를 읽어 Gold를 확장하는 작업은 지금 제공된 데이터로 시작한다.
+[GitHub 통합 실행 결과](https://github.com/2nd-MLOps-engineer-2/Team-Zero/actions/runs/38698470092) · [Gold 수용 기록](docs/handoffs/Gold-final-acceptance.md) · [SQL 증빙 JSON](analysis/evidence/gold-storage-validation.json) · [S5 기록](docs/handoffs/S5-integration.md)
 
-## 화면과 역할
+B 검사 2개는 기존 외부 실행 카탈로그가 필요한 항목으로, 이번 실행에서는 제외됐습니다. CSV의 숫자 표기 차이는 허용하되 키·행·컬럼·값을 대조합니다. 바이트 동일과 값 동일은 구분합니다. 과거 인계본의 203 PASS를 신규 서비스 검증 수치에 합산하지 않습니다.
 
-| 화면 | 핵심 기능 |
-|---|---|
-| 종목 비교 | 기준일·시장 필터, 실적과 시장 대비 성과 사분면, 수급 비교표 |
-| 종목 상세 | 가격·지수 추이, 순매수, 외국인 보유율, 실적·현금흐름 추이·공시 표시 |
-| 분석 근거 | 보고서·공시일·분자·분모·계산 기간·누락 사유 확인, CSV 다운로드 |
+<details>
+<summary><strong>직접 검사하기</strong></summary>
 
-| 팀원 | 담당 | 산출물 |
+```bash
+build/c-venv/bin/python -m unittest discover -s analysis/tests -q
+build/b-venv/bin/python -m pytest backend/service/tests -q
+npm --prefix apps/web test
+npm --prefix apps/web run build
+```
+
+Delta/MySQL 신규 DB 대사는 [Gold 수용 기록](docs/handoffs/Gold-final-acceptance.md)을 따릅니다. 실제 API·브라우저까지 포함하는 재현 절차는 [통합 CI](.github/workflows/integration.yml)에 있습니다.
+
+</details>
+
+### 데이터 제약과 남은 범위
+
+기간 미검증 **61보고서**, 시점 재무 미연결 **1,607행**, 수급 격리 **1키**, 기간 연속성 REVIEW를 상태값으로 보존합니다. 이를 임의 값이나 0으로 채우지 않습니다.
+
+신규 Gold 저장·CSV API·화면 수용 검증은 완료했습니다. **전체 Bronze 재현·기존 58테이블 복원 증빙의 최종 검토, 신규 MySQL → API 직접 조회 검증, main 승격·운영 배포**는 별도 범위입니다. 고정 인계본에는 별도 Bronze 입력·공시 원문 ZIP·덤프·Delta 실파일이 모두 포함되는 것은 아닙니다.
+
+## 기술 구성과 팀
+
+| 영역 | 기술·담당 | 구현 경로 |
 |---|---|---|
-| **A 이어진** | 프론트엔드 | 종목 비교·상세·근거 화면, 필터·차트·다운로드 연동 |
-| **B 설호현** | 백엔드 | 실제 Delta 3레이어·MySQL 적재·대사, 조회 API, 실행·버전 관리 |
-| **C 김형준** | Pandas 분석·시각화 | 기존 AS-IS·사전 검토, Gold 지표·현금흐름·시점·기간 검증, 분류·차트·AI 입력 규격 |
+| 화면 | Vite · JavaScript · Playwright / **A 이어진** | `apps/web/` |
+| 저장·API | FastAPI · Delta Lake · MySQL / **B 설호현** | `backend/service/`, `backend/medallion_pipeline/` |
+| 분석·검증 | Pandas · NumPy · Decimal · Matplotlib / **C 김형준** | `analysis/` |
+| 공통 | 계약·샘플·인수인계·GitHub Actions | `contracts/`, `fixtures/`, `docs/handoffs/`, `.github/workflows/` |
 
-지표 정의, API 응답 형식, 통합 시연과 결과 검증은 공동으로 확정한다.
+고정 인계본은 `data/03_C_integration_20261014/`에 보존합니다. 생성물·DB·Delta·실행 로그는 `build/` 등 별도 위치에 두며 비밀번호와 DB 덤프를 커밋하지 않습니다.
 
-## 분석 원칙
+팀원은 [AGENTS.md](AGENTS.md) → [START_HERE.md](START_HERE.md) → [본인 역할 프롬프트](prompts/) 순서로 시작합니다. 작업 브랜치에서 개발하고 단계별 검증·수신 확인 후 integration에 통합합니다.
 
-- **공시일 < 선택 거래일**인 보고서만 해당 날짜에 연결한다.
-- 재무 누적 실적을 반복된 일별 행에서 합산하지 않는다.
-- 기관 합계와 기관 세부 유형을 이중 합산하지 않는다.
-- 자료 부재·계산 불가를 실제 0과 구분한다.
-- 가격 최종일은 **2026-06-30**이며 실시간 시장 서비스로 표시하지 않는다.
-- 분석 범위는 보유 20종목이다. 동행·괴리는 관측 패턴이며 인과관계나 매매 추천이 아니다.
-
-구체적인 레이어별 내용, Gold 테이블·지표·분류 규칙, 개발 순서와 완료 기준은 **[프로젝트 최종 목표 및 레이어 설계](docs/project-plan.md)**에서 확인한다.
-
-## 체크북과 인수인계
-
-- **[단계별 통합 진행표](docs/integration-status.md)**: S0 계약 → S1 Bronze → S2 Silver → S3 Gold → **S4 B API→A 화면** → S5 전체. 단계별 전달 브랜치·고정 SHA·PR·실행법·수신 확인 결과를 모은다.
-- **[브랜치·합치기·보고 절차](docs/integration-workflow.md)**: 각자 feature → 검사한 handoff → 받는 사람의 review → `integration` → S5 확인 후 `main`. B 결과를 받을 때 A는 자기 작업에서 review 브랜치를 만들어 B의 고정 SHA를 합친 뒤 확인한다.
-- **[B→A 바로 확인할 전달 기록](docs/handoffs/S4-B-to-A.md)**: B가 실제 실행법·API·샘플·검사를 채우고 A가 확인 결과를 남긴다. B 구현·로컬 검증 기록이 있으며 A의 수신 검증은 대기 상태다.
-
-- **[Bronze·Silver·Gold 누락·미구현 보완 업무](docs/missing-work.md)**: M01~M14에 확보할 자료, 추가할 문서·코드·검사, 역할별 책임과 완료 증빙을 지정했다. 각 역할 프롬프트가 이 업무를 함께 수행하도록 연결했다.
-
-- [전체 작업 체크리스트](docs/workbook.md): A 10개, B 12개, C 12개, 공통 전달 5개, 최종 제출 8개. 모두 증빙 확인 전 상태로 시작한다.
-- [공유 계약](contracts/README.md): C→B 계산, B→A API, C→A 시각화, B↔C 검증, A·B·C 화면 통합.
-- [공통 에이전트 지침](AGENTS.md): 역할별 담당 경로·데이터 원칙·완료 보고 규칙.
-- 진행 기록: [A](docs/roles/A.md) · [B](docs/roles/B.md) · [C](docs/roles/C.md).
-
-`TEAM_ZERO_ABC_업무분장_체크북_20261015.pdf` v1.0의 업무·제출 기준을 반영했다. [OriginProof](https://github.com/OriginProof-3web/OriginProof)는 시작 안내·역할 프롬프트·소유 경로·인수인계 구조만 읽고 참고했으며 수정하지 않았다. 체크북의 A/B/C는 이번 개발 역할이며 기존 데이터 인계본의 A/B/C 원천 팀 코드와 구분한다.
+[프로젝트 설계](docs/project-plan.md) · [업무 체크북](docs/workbook.md) · [계약 모음](contracts/README.md) · [통합 진행표](docs/integration-status.md) · [브랜치·인수인계 절차](docs/integration-workflow.md)

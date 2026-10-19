@@ -10,6 +10,18 @@ jobs:
   integration:
     runs-on: ubuntu-24.04
     timeout-minutes: 20
+    services:
+      mysql:
+        image: mysql:8.4
+        env:
+          MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -43,6 +55,14 @@ jobs:
           build/b-venv/bin/python backend/service/pack_c_analysis.py --source build/analysis --output build/c-artifact --project-root .
           build/b-venv/bin/python backend/service/import_analysis.py --source build/c-artifact --project-root . --output build/c-delta
           python apps/web/scripts/prepare-c-review.py --c-output build/analysis --output build/c-browser.json
+      - name: Verify new Gold Delta to MySQL and C SQL
+        run: |
+          build/b-venv/bin/python - <<'PYMYSQL'
+          import pathlib, subprocess, sys
+          runs = list(pathlib.Path('build/c-delta').glob('*/catalog.json'))
+          assert len(runs) == 1, 'Expected one new Delta run'
+          subprocess.run([sys.executable, '-m', 'analysis.verify_storage', '--run', str(runs[0].parent), '--local-empty-password'], check=True)
+          PYMYSQL
       - name: Start real B APIs and compare C values
         env:
           TZ_CORS_ORIGINS: http://127.0.0.1:4175
@@ -79,6 +99,8 @@ jobs:
         with:
           name: integration-validation
           path: |
+            build/c-delta/*/c_sql_validation.json
+            build/c-delta/*/mysql_validation.json
             build/c-api-check.json
             build/analysis/validation.json
             build/api*.log

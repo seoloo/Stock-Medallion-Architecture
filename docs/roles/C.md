@@ -180,3 +180,7 @@ Silver 규칙 결과(c-gold-0.1.0):
 ## 9. S4 C 수치 확인 (2026-10-15)
 
 B [PR #6](https://github.com/2nd-MLOps-engineer-2/Team-Zero/pull/6) head `9f78ccc`를 C HEAD `81a5705`에서 만든 `review/s4-c-v1`에 merge해 확인했다. C 테스트 18 OK·Gold 해시 S3와 동일, B 테스트 49 passed·2 skipped, `analysis/verify_api.py`로 API 전량 대조 — 값 차이 0. 원천 통과 컬럼 자릿수 표기·`input_version` 표기 차이는 합의 필요. 상세 [S4-C-check](../handoffs/S4-C-check.md), 증빙 `analysis/evidence/s4_api_check.json`. MySQL·Delta 경로와 C12/G04 SQL 대조는 B 실행 결과 대기. push·PR 코멘트는 미실행.
+
+
+## 2026-10-15 Gold 최종 수용 보완
+C12/G04: 신규 Gold 2테이블 Delta→격리 MySQL 전량 digest 및 독립 SQL 222 PASS. G05: CSV 실제 API·브라우저 18 PASS. 기존 이력·데이터 제약 유지. 상세 [Gold 최종 수용](../handoffs/Gold-final-acceptance.md). main 및 기존 B 58테이블 전체 재현은 별도.

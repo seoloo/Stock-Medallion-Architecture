@@ -1,3 +1,5 @@
+**신규 Gold 최종 수용 검증:** C 계산→Delta→격리 MySQL 전량 대사·222 SQL 검사 및 실제 CSV API/브라우저 검증 PASS. [범위·증빙·남은 전체 프로젝트 작업](handoffs/Gold-final-acceptance.md). 아래 신규 C MySQL 대기 문구는 과거 이력이다. main 승격·전체 Bronze 재현 완료를 뜻하지 않는다.
+
 # 단계별 통합 진행표
 
 **A 시각화 후속 병합 완료:** PR #12 → integration (`8a9fce00d8181a95a960c543dbd0da88e23e41be`). 병합 전 GitHub CI 두 종류 PASS, 병합 후 단위 17 / 브라우저 18(제외 없음) / 빌드 / 75파일 무결성 PASS. [병합 결과](handoffs/A-visual-merge.md). main 증빙 대기는 유지한다.
