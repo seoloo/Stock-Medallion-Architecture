@@ -1,0 +1,898 @@
+{
+  "version": "overheating-forecast-0.2.0",
+  "snapshot_date": "2026-10-16",
+  "threshold": "1.5",
+  "counts": {
+    "과열 가능성이 일부 있다고 예상": 10,
+    "과열 가능성을 낮게 예상": 10
+  },
+  "rows": [
+    {
+      "stock_cd": "000660",
+      "stock_nm": "SK하이닉스",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.890109890109890109890109890",
+      "provider_peer_pbr_ratio": "0.4348925410872313527180783818",
+      "peer_count": 6,
+      "peer_codes": [
+        "005930",
+        "007660",
+        "036930",
+        "039030",
+        "042700",
+        "402340"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "2.567771680460597337171644476",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.89배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.43배",
+        "202606 분기 매출 전년동기 +256.78%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 -4,162,517주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "003490",
+      "stock_nm": "대한항공",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.25",
+      "provider_peer_pbr_ratio": "0.4184100418410041841004184100",
+      "peer_count": 6,
+      "peer_codes": [
+        "020560",
+        "089590",
+        "091810",
+        "180640",
+        "272450",
+        "298690"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.164136087719580723589933502",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.25배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.42배",
+        "202606 분기 매출 전년동기 +16.41%",
+        "영업이익 적자",
+        "별도 단기 수급 5개 관측 순매수 2,152,843주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "005380",
+      "stock_nm": "현대차",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.120689655172413793103448276",
+      "provider_peer_pbr_ratio": "1.830985915492957746478873239",
+      "peer_count": 6,
+      "peer_codes": [
+        "000270",
+        "001390",
+        "003620",
+        "151860",
+        "381970",
+        "900140"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.019230968361888470324126519",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.12배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 1.83배",
+        "202606 분기 매출 전년동기 +1.92%",
+        "영업이익 감소",
+        "별도 단기 수급 5개 관측 순매수 -219,668주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "005490",
+      "stock_nm": "POSCO홀딩스",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "0.9512195121951219512195121951",
+      "provider_peer_pbr_ratio": "1.56",
+      "peer_count": 6,
+      "peer_codes": [
+        "001430",
+        "004020",
+        "009520",
+        "016380",
+        "058650",
+        "460860"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.097011779717013374649684431",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 0.95배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 1.56배",
+        "202606 분기 매출 전년동기 +9.70%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 -131,229주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "005930",
+      "stock_nm": "삼성전자",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.635761589403973509933774834",
+      "provider_peer_pbr_ratio": "0.3122629582806573957016434893",
+      "peer_count": 6,
+      "peer_codes": [
+        "000660",
+        "007660",
+        "036930",
+        "039030",
+        "042700",
+        "402340"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "1.299959901456824329489326948",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.64배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.31배",
+        "202606 분기 매출 전년동기 +130.00%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 -17,538,399주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "006400",
+      "stock_nm": "삼성SDI",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.737373737373737373737373737",
+      "provider_peer_pbr_ratio": "0.3632523759239704329461457233",
+      "peer_count": 6,
+      "peer_codes": [
+        "043260",
+        "058610",
+        "066970",
+        "247540",
+        "373220",
+        "450080"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.185380889476001761338617349",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.74배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.36배",
+        "202606 분기 매출 전년동기 +18.54%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 -559,131주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "017670",
+      "stock_nm": "SK텔레콤",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.172043010752688172043010753",
+      "provider_peer_pbr_ratio": "1.345679012345679012345679012",
+      "peer_count": 3,
+      "peer_codes": [
+        "006490",
+        "032640",
+        "065530"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.004678713008205033649857103",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.17배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 1.35배",
+        "202606 분기 매출 전년동기 +0.47%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 509,244주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "034020",
+      "stock_nm": "두산에너빌리티",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "3.346666666666666666666666667",
+      "provider_peer_pbr_ratio": "0.8753269398430688753269398431",
+      "peer_count": 6,
+      "peer_codes": [
+        "017800",
+        "108490",
+        "241560",
+        "267270",
+        "277810",
+        "454910"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.034099365287809148610199168",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "WATCH"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 3.35배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.88배",
+        "202606 분기 매출 전년동기 +3.41%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 -2,647,347주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "035420",
+      "stock_nm": "NAVER",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "0.6818181818181818181818181818",
+      "provider_peer_pbr_ratio": "0.6766917293233082706766917293",
+      "peer_count": 6,
+      "peer_codes": [
+        "020120",
+        "035720",
+        "067160",
+        "300080",
+        "376300",
+        "408920"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.162498713594730884017700937",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "NOT_MET",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 0.68배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.68배",
+        "202606 분기 매출 전년동기 +16.25%",
+        "영업이익 감소",
+        "별도 단기 수급 5개 관측 순매수 -197,130주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "035900",
+      "stock_nm": "JYP Ent.",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "0.4132231404958677685950413223",
+      "provider_peer_pbr_ratio": "1.550387596899224806201550388",
+      "peer_count": 6,
+      "peer_codes": [
+        "035760",
+        "041510",
+        "079160",
+        "122870",
+        "253450",
+        "352820"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "-0.1515291936978683966635773865",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 0.41배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 1.55배",
+        "202606 분기 매출 전년동기 -15.15%",
+        "영업이익 감소",
+        "별도 단기 수급 5개 관측 순매수 8,845주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "051910",
+      "stock_nm": "LG화학",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "0.6962025316455696202531645570",
+      "provider_peer_pbr_ratio": "0.1913043478260869565217391304",
+      "peer_count": 6,
+      "peer_codes": [
+        "003670",
+        "010060",
+        "011780",
+        "011790",
+        "086520",
+        "457190"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.190401813830457236427761683",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "NOT_MET",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 0.70배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.19배",
+        "202606 분기 매출 전년동기 +19.04%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 -157,426주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "058470",
+      "stock_nm": "리노공업",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.222826086956521739130434783",
+      "provider_peer_pbr_ratio": "1.132550335570469798657718121",
+      "peer_count": 6,
+      "peer_codes": [
+        "000660",
+        "005930",
+        "007660",
+        "036930",
+        "042700",
+        "402340"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.272888888888888888888888889",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "NOT_MET",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.22배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 1.13배",
+        "202606 분기 매출 전년동기 +27.29%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 -373,686주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "066570",
+      "stock_nm": "LG전자",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.569444444444444444444444444",
+      "provider_peer_pbr_ratio": "1.948275862068965517241379310",
+      "peer_count": 6,
+      "peer_codes": [
+        "008700",
+        "032540",
+        "078890",
+        "084730",
+        "089850",
+        "175140"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.149090190064190671855935105",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.57배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 1.95배",
+        "202606 분기 매출 전년동기 +14.91%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 -752,363주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "068270",
+      "stock_nm": "셀트리온",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.047210300429184549356223176",
+      "provider_peer_pbr_ratio": "0.4372759856630824372759856631",
+      "peer_count": 5,
+      "peer_codes": [
+        "000100",
+        "000250",
+        "128940",
+        "207940",
+        "326030"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.449505980239209568382735309",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "NOT_MET",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.05배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.44배",
+        "202606 분기 매출 전년동기 +44.95%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 -80,372주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "090430",
+      "stock_nm": "아모레퍼시픽",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.125827814569536423841059603",
+      "provider_peer_pbr_ratio": "0.4131227217496962332928311057",
+      "peer_count": 6,
+      "peer_codes": [
+        "002790",
+        "051900",
+        "161890",
+        "192820",
+        "278470",
+        "483650"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.170049751243781094527363184",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "NOT_MET",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.13배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.41배",
+        "202606 분기 매출 전년동기 +17.00%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 7,922주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "097950",
+      "stock_nm": "CJ제일제당",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "0.7692307692307692307692307692",
+      "provider_peer_pbr_ratio": "0.3007518796992481203007518797",
+      "peer_count": 6,
+      "peer_codes": [
+        "003230",
+        "004370",
+        "006040",
+        "026960",
+        "140410",
+        "271560"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.095485387774537229926790072",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "NOT_MET",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 0.77배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.30배",
+        "202606 분기 매출 전년동기 +9.55%",
+        "영업이익 감소",
+        "별도 단기 수급 5개 관측 순매수 60,248주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "196170",
+      "stock_nm": "알테오젠",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "0.5439853076216712580348943985",
+      "provider_peer_pbr_ratio": "2.078596491228070175438596491",
+      "peer_count": 5,
+      "peer_codes": [
+        "007390",
+        "087010",
+        "145020",
+        "298380",
+        "347850"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "2.704301075268817204301075269",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "WATCH"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 0.54배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 2.08배",
+        "202606 분기 매출 전년동기 +270.43%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 345,685주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "247540",
+      "stock_nm": "에코프로비엠",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "0.7046568627450980392156862745",
+      "provider_peer_pbr_ratio": "1.315789473684210526315789474",
+      "peer_count": 6,
+      "peer_codes": [
+        "006400",
+        "043260",
+        "058610",
+        "066970",
+        "373220",
+        "450080"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "-0.2603565473900218032576632038",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 0.70배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 1.32배",
+        "202606 분기 매출 전년동기 -26.04%",
+        "영업이익 감소",
+        "별도 단기 수급 5개 관측 순매수 -334,711주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "263750",
+      "stock_nm": "펄어비스",
+      "status": "WATCH",
+      "label": "과열 가능성이 일부 있다고 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "0.6829268292682926829268292683",
+      "provider_peer_pbr_ratio": "1.969849246231155778894472362",
+      "peer_count": 6,
+      "peer_codes": [
+        "036570",
+        "192080",
+        "251270",
+        "259960",
+        "293490",
+        "462870"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "2.476534296028880866425992780",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "WATCH",
+        "1.5": "WATCH",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 0.68배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 1.97배",
+        "202606 분기 매출 전년동기 +247.65%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 217,487주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영",
+        "비교 임계값에 따라 등급 변경: 민감한 결과"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    },
+    {
+      "stock_cd": "357780",
+      "stock_nm": "솔브레인",
+      "status": "NOT_MET",
+      "label": "과열 가능성을 낮게 예상",
+      "assessment_scope": "TEAM_VALUATION_EARNINGS_FORECAST",
+      "historical_periods": [
+        "202312",
+        "202412",
+        "202512"
+      ],
+      "historical_pbr_ratio": "1.189473684210526315789473684",
+      "provider_peer_pbr_ratio": "0.3791946308724832214765100671",
+      "peer_count": 6,
+      "peer_codes": [
+        "000660",
+        "005930",
+        "007660",
+        "036930",
+        "042700",
+        "402340"
+      ],
+      "financial_period": "202606",
+      "revenue_yoy": "0.363636363636363636363636364",
+      "cash_review_complete": false,
+      "short_price_intervals": 4,
+      "flow_observations": 5,
+      "flow_start": "2026-10-08",
+      "flow_end": "2026-10-15",
+      "sensitivity": {
+        "1.25": "NOT_MET",
+        "1.5": "NOT_MET",
+        "2.0": "NOT_MET"
+      },
+      "reasons": [
+        "현재 PBR / 과거 3개 연말 PBR 중앙값 1.19배",
+        "현재 PBR / 제공사 비교군 PBR 중앙값 0.38배",
+        "202606 분기 매출 전년동기 +36.36%",
+        "영업이익 증가 또는 유지",
+        "별도 단기 수급 5개 관측 순매수 12,154주; 등급 가감 없음",
+        "같은 최신 분기 영업현금흐름 정량등급 미반영"
+      ],
+      "version": "overheating-forecast-0.2.0"
+    }
+  ],
+  "published_fields_note": "Provider level values (PBR levels, medians, operating profit amounts, short-window flow and return) are omitted from the public file. Full results and inputs are regenerated locally under build/research/ by scripts/research/assess.py."
+}
